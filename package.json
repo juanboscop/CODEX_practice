@@ -1,0 +1,17 @@
+{
+  "name": "interactive-historical-earth",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "postinstall": "pnpm -r install",
+    "lint": "pnpm --filter client exec eslint src --ext ts,tsx",
+    "format": "pnpm --filter client exec prettier --check .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
