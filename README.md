@@ -13,3 +13,13 @@ python -m turnersubs.main \
 ```
 
 The images directory should contain numbered image files (png or jpg). They will be shown in order for equal slices of the audio duration.
+
+## Graphical interface
+
+Launch a simple GUI to select the audio file, subtitle file and images directory:
+
+```bash
+python -m turnersubs.main --gui
+```
+
+After choosing the files, press **Create Video** and the resulting MP4 will be saved to the chosen output path.
