@@ -1,6 +1,13 @@
 import os
 import argparse
-from moviepy import ImageClip, AudioFileClip, concatenate_videoclips
+
+try:
+    from moviepy import ImageClip, AudioFileClip, concatenate_videoclips
+except ModuleNotFoundError as exc:  # pragma: no cover - only triggers when missing
+    raise ImportError(
+        "moviepy is required. Install dependencies with 'pip install moviepy ffmpeg-python'"
+    ) from exc
+
 import ffmpeg
 
 def get_images(directory):

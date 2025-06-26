@@ -2,6 +2,16 @@
 
 TurnerSubs creates a slideshow video from a set of images, an audio narration and an ASS subtitle file containing karaoke effects. The resulting MP4 highlights the lyrics as the narration plays.
 
+## Installation
+
+Install the Python dependencies and ensure `ffmpeg` is available on your system:
+
+```bash
+pip install moviepy ffmpeg-python
+```
+
+`ffmpeg` itself must also be installed and in your `PATH`.
+
 ## Usage
 
 ```bash
